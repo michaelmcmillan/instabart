@@ -1,6 +1,7 @@
-(function() {
-  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
-templates['card'] = template(function (Handlebars,depth0,helpers,partials,data) {
+this["Handlebars"] = this["Handlebars"] || {};
+this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
+
+this["Handlebars"]["templates"]["card"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, functionType="function", escapeExpression=this.escapeExpression;
@@ -37,7 +38,8 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   buffer += "</p>\n      <i class=\"flip-button close\"></i>\n    </div>\n  </div>\n</div>";
   return buffer;
   });
-templates['tagline'] = template(function (Handlebars,depth0,helpers,partials,data) {
+
+this["Handlebars"]["templates"]["tagline"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var stack1, helper, functionType="function";
@@ -48,4 +50,3 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   if(stack1 || stack1 === 0) { return stack1; }
   else { return ''; }
   });
-})();
