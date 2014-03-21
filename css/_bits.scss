@@ -116,3 +116,17 @@ $backgrey: #666;
     font-size: 4em;
   }
 }
+
+@mixin tiny-card {
+  .cardface.front a {
+    padding: 10px 5px;
+  }
+
+  h2 {
+    font-size: .96em;
+  }
+
+  .pictogram {
+    font-size: 2.4em;
+  }
+}

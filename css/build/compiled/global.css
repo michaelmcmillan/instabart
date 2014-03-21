@@ -704,16 +704,11 @@ i {
   position: relative;
   width: 210px;
   height: 210px;
-  padding: 0 10px 10px 0;
+  padding: 0 6px 6px 0;
 }
 @media (max-width: 640px) {
   .card {
     width: 33.33%;
-  }
-}
-@media (max-width: 480px) {
-  .card {
-    width: 50%;
   }
 }
 .card.active {
@@ -731,7 +726,7 @@ i {
   height: 100%;
   position: absolute;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 .cardface.front a {
   display: block;
@@ -903,13 +898,13 @@ footer, .push {
 @media (max-width: 850px) {
   #grid {
     width: 640px;
-    padding: 10px 0 0 10px;
+    padding: 2px 0 0 2px;
   }
 }
 @media (max-width: 640px) {
   #grid {
     width: 100%;
-    padding: 10px 0 0 10px;
+    padding: 2px;
   }
 }
 
@@ -1032,23 +1027,16 @@ footer, .push {
   }
 }
 @media (max-width: 370px) {
+  .cardface.front a {
+    padding: 10px 5px;
+  }
+
   h2 {
-    font-size: 1.5em;
-  }
-
-  .back p {
-    line-height: 1.1em;
-    font-size: 0.75em;
-    margin-top: 0;
-  }
-
-  .flip-button {
-    bottom: 4px;
-    right: 4px;
+    font-size: .96em;
   }
 
   .pictogram {
-    font-size: 4em;
+    font-size: 2.4em;
   }
 }
 .modal {
@@ -1277,6 +1265,10 @@ footer, .push {
 #schedule_settings .annotation i {
   display: inline;
   color: #777;
+}
+
+.flip-button, #schedule-settings-button {
+  display: none !important;
 }
 
 * {

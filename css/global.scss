@@ -8,6 +8,10 @@
 @import "structure";
 @import "modal";
 
+// INNSIDA
+.flip-button, #schedule-settings-button {
+  display: none !important;
+}
 
 // Basic page setup
 * {
