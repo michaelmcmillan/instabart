@@ -34,7 +34,8 @@ var Analytics = {
       // Small timeout to ensure that the event is tracked
       // before following the link
       setTimeout(function() {
-        document.location.href = eventTrigger.prop('href');
+        // document.location.href = eventTrigger.prop('href');
+        window.open(eventTrigger.prop('href'), '_system');
       }, 100);
 
     });

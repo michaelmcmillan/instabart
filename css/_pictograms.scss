@@ -4,6 +4,18 @@
        url('../../../fonts/pictograms.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'entypo';
+  src: url('../../../fonts/entypo.woff') format('woff'),
+       url('../../../fonts/entypo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'glyphicons';
+  src: url('../../../fonts/glyphicons.woff') format('woff'),
+       url('../../../fonts/glyphicons.ttf') format('truetype');
+}
+
 i {
   font-family: "pictograms";
   font-style: normal;
@@ -48,7 +60,29 @@ i {
 .lego:after          { content:"\e01d"; }
 .emailcircle:after   { content:"\e01e"; }
 .chat:after          { content:"\e01f"; }
+.videos:after          {
+  content:"\1F3AC";
+  font-family: "entypo";
+  font-size: 2em;
+  position: relative;
+  top: -20px;
+}
 
+.dictionary:after          {
+  content:"\1F394";
+  font-family: "entypo";
+  font-size: 2em;
+  position: relative;
+  top: -20px;
+}
+
+.ibok:after          {
+  content:"\e352";
+  font-family: "glyphicons";
+  font-size: 0.9em;
+  position: relative;
+  top: -16px;
+}
 
 .email         { padding-top: 0; }
 .studweb       { padding-top: 5px; }

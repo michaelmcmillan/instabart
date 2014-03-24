@@ -1618,6 +1618,12 @@ var data = {
       link:'https://idp.feide.no/simplesaml/saml2/idp/SSOService.php?SAMLRequest=fVJNj5swEL33VyD3DAbSSisrsEo3WjXSbhMtbCv1ZswATozt2iZs%2F30NJFJ6yYWDeW9m3sf68aMXwRmM5UpmKIliFIBkquayzdB7%2BRw%2BoMf809rSXmiyGVwn3%2BDPANYFG2vBOE97UtIOPZgCzJkzeH97yVDnnLYEY%2BuGGqQboYqkk0MkFWYtDysu8S%2Bo9tURmLM3qDQaFcUjxQ3wGl6V4RQFW7%2BOS%2BrmE6%2BTea2jGTTNtLzXAqYj8fRJp7%2B4KPaXkyLdaRTsthkSDISoNKvVSVPa1ae%2BaTToY9f10Ctoa6qOoj01Hm3tADtpHZUuQ2mcrML4a5g%2BlGlCkpTEq98oOBjlFFPiG5eLYYORRFHLLZG0B0scI8Xm9YWkUUyqBWTJ97I8hId9Uc4Dzl6C%2BeHRGbqVhIKf11DSKRQfk7RkEnd%2FC72mckvR9zn6IuNK%2BfANWIz2Po%2FjGI2rSJkWp3Gc4PgL9iiP%2BIzyuRZkdsrk04aeMiBXCcQu7vuVakmfO6DRFLZPeo1vyZeCTT7stgclOPsbbIRQ45MB6rw3zgyAgmdleuruq5leeB02M5Q4Q6XlvlwI58vK%2F2uc%2FwM%3D&RelayState=NTNU%26fnromgjor%3D',
       description:'Meld deg på (og av) emner, godkjenn studieplan, betal semesteravgift, og finn ut hvor hardt du failet på eksamen.'
     }, {
+      title:'Reserver rom',
+      pictogram:'romres',
+      css_id:'romres',
+      link:'https://romres.ntnu.no/',
+      description:'Reservér grupperom og auditorier et halvt år i forveien. Timeplaner for enkeltrom   finner du <a href="http://www.ntnu.no/studieinformasjon/rom/" id="track-romres-extra">her</a>.'
+    }, {
       title:'Middag',
       pictogram:'dinner',
       css_id:'dinner',
@@ -1630,28 +1636,16 @@ var data = {
       link:'http://use.mazemap.com/',
       description:'Hjelp, hvor er datasalen Sprokkit? Hva er dette «Kjelhuset» alle snakker om? MazeMap  viser vei! <br>(…på Gløshaugen / St. Olav)'
     }, {
-      title:'FileSender',
-      pictogram:'filesender',
-      css_id:'filesender',
-      link:'https://idp.feide.no/simplesaml/module.php/feide/preselectOrg.php?HomeOrg=ntnu.no&ReturnTo=https%3A%2F%2Ffilesender.uninett.no%2Fsimplesaml%2Fmodule.php%2Fcore%2Fas_login.php%3FAuthId%3Ddefault-sp%26ReturnTo%3Dhttps%253A%252F%252Ffilesender.uninett.no%252Findex.php%253Fs%253Dupload ',
+      title:'Forelesninger',
+      pictogram:'videos',
+      css_id:'videos',
+      link:'https://video.adm.ntnu.no/openVideo/',
       description:'Trenger du å sende en diger fil til noen? Når mailbokser og minnepinner kneler, kommer  FileSender til unnsetning!'
     }, {
-      title:'Karakterer',
-      pictogram:'grades',
-      css_id:'grades',
-      link:'https://innsida.ntnu.no/sso/?target=KarstatProd',
-      description:'Karakterstatistikk for flere år bakover. Hvilke av emnene du tar i år er typiske stryk- emner?'
-    }, {
-      title:'Romres',
-      pictogram:'romres',
-      css_id:'romres',
-      link:'https://romres.ntnu.no/',
-      description:'Reservér grupperom og auditorier et halvt år i forveien. Timeplaner for enkeltrom   finner du <a href="http://www.ntnu.no/studieinformasjon/rom/" id="track-romres-extra">her</a>.'
-    }, {
-      title:'IT-hjelp',
+      title:'Programvare',
       pictogram:'it-help',
       css_id:'it-hjelp',
-      link:'https://innsida.ntnu.no/it-hjelp',
+      link:'http://www.progdist.ntnu.no',
       description:'Hvordan koble telefonen automatisk til eduroam? Hvordan bruke printerne på campus? NTNUs IT-hjelp løser dine problemer!'
     }, {
       title:'Farm',
@@ -1660,10 +1654,16 @@ var data = {
       link:'https://farm.ntnu.no/',
       description:'Savner du Word? Farm gir deg tilgang til programmene, filene og nettsidene du ville hatt på en datasal. Kort innføring finner du <a href="https://innsida.ntnu.no/wiki/-/wiki/Norsk/Programfarm" id="track-farm-extra">her</a>.'
     }, {
-      title:'Grupper',
-      pictogram:'kundesenteret',
-      css_id:'kundesenteret',
-      link:'https://innsida.ntnu.no/sso/?target=studdrift_groups',
+      title:'Kjøp/selg bruktbøker',
+      pictogram:'ibok',
+      css_id:'ibok',
+      link:'http://ibok.no',
+      description:'Karakterstatistikk for flere år bakover. Hvilke av emnene du tar i år er typiske stryk- emner?'
+    }, {
+      title:'Ordbok',
+      pictogram:'dictionary',
+      css_id:'dictionary',
+      link:'http://ordnett.no',
       description:'Lag dine egne epostlister, og opprett grupper for dine NTNU-prosjekter, der du kan dele filer med andre.'
     }
   ],
@@ -1830,7 +1830,8 @@ var Analytics = {
       // Small timeout to ensure that the event is tracked
       // before following the link
       setTimeout(function() {
-        document.location.href = eventTrigger.prop('href');
+        // document.location.href = eventTrigger.prop('href');
+        window.open(eventTrigger.prop('href'), '_system');
       }, 100);
 
     });

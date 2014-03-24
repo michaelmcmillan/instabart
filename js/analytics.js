@@ -35,7 +35,8 @@ var Analytics = {
       // before following the link
       setTimeout(function() {
         // @if ENV='web'
-        document.location.href = eventTrigger.prop('href');
+        // document.location.href = eventTrigger.prop('href');
+        window.open(eventTrigger.prop('href'), '_system');
         // @endif
 
         // @if ENV='phone'
