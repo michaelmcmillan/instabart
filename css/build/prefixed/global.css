@@ -505,7 +505,7 @@ i {
 
 .romres:after {
   content: "\e005";
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .it-help:after {
@@ -616,7 +616,7 @@ i {
 }
 
 .romres {
-  padding-top: 5px;
+  padding-top: 0;
 }
 
 .it-help {
