@@ -1,24 +1,105 @@
 <!doctype html>
 <html lang="no">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Instabart</title>
-  <link rel="icon" type="image/ico" href="img/favicon.ico">
-  <link rel="stylesheet" href="css/build/minified/global.css">
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" type="text/css" href="css/build/ie.css" />
-  <![endif]-->
+  <title>Snarveier</title>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/glyphicons.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+
 </head>
 
 <body>
-<div id="pagewrap">
-  <div id="ie-warning">Kondolerer. Nettleseren din er like gammel som dinosaurene. Denne nettsiden kan av den grunn oppføre seg litt rart.</div>
-  <div id="grid" class="clearfix"></div>
-</div><!-- end pagewrap -->
+  <div id="shortcuts">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="js/build/production.min.js"></script>
+    <div class="shortcut itslearning">
+      <a class="content" href="https://sats.itea.ntnu.no/sso-wrapper/web/wrapper?target=itslearning">
+        <h2>Itslearning</h2>
+        <i class="pictogram itslearning"></i>
+      </a>
+    </div>
+
+    <div class="shortcut email">
+      <a class="content" href="https://webmail.stud.ntnu.no/">
+        <h2>Epost</h2>
+        <i class="pictogram glyphicons envelope"></i>
+      </a>
+    </div>
+
+    <div class="shortcut schedule">
+      <a class="content" href="http://ntnu.1024.no/mortnod">
+        <h2>Timeplan</h2>
+        <i class="pictogram glyphicons calendar"></i>
+      </a>
+    </div>
+
+    <div class="shortcut studentweb">
+      <a class="content" href="https://idp.feide.no/simplesaml/saml2/idp/SSOService.php?SAMLRequest=fVJNj5swEL33VyD3DAbSSisrsEo3WjXSbhMtbCv1ZswATozt2iZs%2F30NJFJ6yYWDeW9m3sf68aMXwRmM5UpmKIliFIBkquayzdB7%2BRw%2BoMf809rSXmiyGVwn3%2BDPANYFG2vBOE97UtIOPZgCzJkzeH97yVDnnLYEY%2BuGGqQboYqkk0MkFWYtDysu8S%2Bo9tURmLM3qDQaFcUjxQ3wGl6V4RQFW7%2BOS%2BrmE6%2BTea2jGTTNtLzXAqYj8fRJp7%2B4KPaXkyLdaRTsthkSDISoNKvVSVPa1ae%2BaTToY9f10Ctoa6qOoj01Hm3tADtpHZUuQ2mcrML4a5g%2BlGlCkpTEq98oOBjlFFPiG5eLYYORRFHLLZG0B0scI8Xm9YWkUUyqBWTJ97I8hId9Uc4Dzl6C%2BeHRGbqVhIKf11DSKRQfk7RkEnd%2FC72mckvR9zn6IuNK%2BfANWIz2Po%2FjGI2rSJkWp3Gc4PgL9iiP%2BIzyuRZkdsrk04aeMiBXCcQu7vuVakmfO6DRFLZPeo1vyZeCTT7stgclOPsbbIRQ45MB6rw3zgyAgmdleuruq5leeB02M5Q4Q6XlvlwI58vK%2F2uc%2FwM%3D&amp;RelayState=NTNU%26fnromgjor%3D">
+        <h2>Studentweb</h2>
+        <i class="pictogram glyphicons bank"></i>
+      </a>
+    </div>
+
+    <div class="shortcut roomreservation">
+      <a class="content" href="https://romres.ntnu.no/">
+        <h2>Reserver rom</h2>
+        <i class="pictogram fa fa-clock-o"></i>
+      </a>
+    </div>
+
+    <div class="shortcut dinner">
+      <a class="content" href="https://www.sit.no/mat">
+        <h2>Middag</h2>
+        <i class="pictogram glyphicons cutlery"></i>
+      </a>
+    </div>
+
+    <div class="shortcut map">
+      <a class="content" href="https://innsida.ntnu.no/kart">
+        <h2>Kart</h2>
+        <i class="pictogram glyphicons google_maps"></i>
+      </a>
+    </div>
+
+    <div class="shortcut film">
+      <a class="content" href="https://video.adm.ntnu.no/openVideo/">
+        <h2>Video-forelesninger</h2>
+        <i class="pictogram glyphicons film"></i>
+      </a>
+    </div>
+
+    <div class="shortcut software">
+      <a class="content" href="http://www.progdist.ntnu.no">
+        <h2>Last ned programmer</h2>
+        <i class="pictogram glyphicons hdd"></i>
+      </a>
+    </div>
+
+    <div class="shortcut farm">
+      <a class="content" href="https://farm.ntnu.no/">
+        <h2>Farm</h2>
+        <i class="pictogram fa fa-cloud"></i>
+      </a>
+    </div>
+
+    <div class="shortcut literature">
+      <a class="content" href="https://innsida.ntnu.no/litteratur">
+        <h2>Finn litteratur</h2>
+        <i class="pictogram glyphicons book_open"></i>
+      </a>
+    </div>
+
+    <div class="shortcut bartebuss">
+      <a class="content" href="http://bartebuss.no">
+        <h2>Busstider</h2>
+        <i class="pictogram glyphicons bus"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="js/modernizr.js"></script>
+
 </body>
 </html>

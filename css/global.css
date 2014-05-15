@@ -1,0 +1,72 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#shortcuts {
+  padding: 6px 0 0 6px;
+}
+#shortcuts:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.shortcut {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 33.33%;
+  padding: 0 6px 6px 0;
+}
+.shortcut:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.shortcut .content {
+  position: absolute;
+  margin: 0 6px 6px 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  text-decoration: none;
+  padding: 10px 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  background: whitesmoke;
+  overflow: hidden;
+}
+.shortcut .content:hover {
+  background: #eeeeee;
+}
+.shortcut h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  font-size: .8em;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
+  opacity: 0.5;
+}
+.shortcut .pictogram {
+  text-align: center;
+  padding-left: 0;
+  font-size: 2.4em;
+  opacity: 0.5;
+  font-style: normal;
+  display: block;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
+}
+a:hover .shortcut .pictogram {
+  opacity: 0.8;
+}
+.shortcut .pictogram::before {
+  position: relative;
+  margin: 0;
+}
