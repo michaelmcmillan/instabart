@@ -26,7 +26,7 @@
   display: block;
   margin-top: 100%;
 }
-.shortcut .content {
+.shortcut a {
   position: absolute;
   margin: 0 6px 6px 0;
   top: 0;
@@ -40,8 +40,11 @@
   background: whitesmoke;
   overflow: hidden;
 }
-.shortcut .content:hover {
+.shortcut a:hover {
   background: #eeeeee;
+}
+.shortcut a:hover .pictogram, .shortcut a:hover h2 {
+  opacity: .8;
 }
 .shortcut h2 {
   font-family: 'Open Sans', sans-serif;
@@ -60,13 +63,10 @@
   opacity: 0.5;
   font-style: normal;
   display: block;
-  color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
-}
-a:hover .shortcut .pictogram {
-  opacity: 0.8;
 }
 .shortcut .pictogram::before {
   position: relative;
   margin: 0;
+  color: rgba(0, 0, 0, 0.8);
 }

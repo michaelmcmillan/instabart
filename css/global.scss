@@ -32,7 +32,7 @@ $hovergrey: #eee;
     margin-top: 100%;
   }
 
-  .content {
+  a {
     position: absolute;
     margin: 0 6px 6px 0;
     top: 0;
@@ -48,6 +48,10 @@ $hovergrey: #eee;
 
     &:hover {
       background: $hovergrey;
+
+      .pictogram, h2 {
+        opacity: .8;
+      }
     }
   }
 
@@ -69,17 +73,12 @@ $hovergrey: #eee;
     opacity: 0.5;
     font-style: normal;
     display: block;
-    color: rgba(black, 0.8);
     text-shadow: 1px 4px 6px $lightgrey, 0 0 0 black, 1px 4px 6px $lightgrey;
-
-    a:hover & {
-      opacity: 0.8;
-    }
 
     &::before {
       position: relative;
       margin: 0;
-      // top: 20px;
+      color: rgba(black, 0.8);
     }
   }
 }
