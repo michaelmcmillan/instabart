@@ -52,6 +52,10 @@ $hovergrey: #eee;
       .pictogram, h2 {
         opacity: .8;
       }
+
+      .pictogram-svg {
+        opacity: .95;
+      }
     }
   }
 
@@ -79,6 +83,34 @@ $hovergrey: #eee;
       position: relative;
       margin: 0;
       color: rgba(black, 0.8);
+      font-size: 1.1em;
     }
+  }
+
+  .inset-shadow-svg {
+    fill: rgba(0, 0, 0, 0.55);
+    filter: url(#inset-shadow);
+  }
+
+  .pictogram-svg {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+}
+
+.shortcut.film,
+.shortcut.software,
+.shortcut.literature {
+  a {
+    padding-top: 5px;
+  }
+
+  i {
+    position: relative;
+    top: -5px;
   }
 }

@@ -46,6 +46,9 @@
 .shortcut a:hover .pictogram, .shortcut a:hover h2 {
   opacity: .8;
 }
+.shortcut a:hover .pictogram-svg {
+  opacity: .95;
+}
 .shortcut h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -69,4 +72,30 @@
   position: relative;
   margin: 0;
   color: rgba(0, 0, 0, 0.8);
+  font-size: 1.1em;
+}
+.shortcut .inset-shadow-svg {
+  fill: rgba(0, 0, 0, 0.55);
+  -webkit-filter: url(#inset-shadow);
+  filter: url(#inset-shadow);
+}
+.shortcut .pictogram-svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.shortcut.film a,
+.shortcut.software a,
+.shortcut.literature a {
+  padding-top: 5px;
+}
+.shortcut.film i,
+.shortcut.software i,
+.shortcut.literature i {
+  position: relative;
+  top: -5px;
 }
