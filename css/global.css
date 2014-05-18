@@ -50,11 +50,11 @@
   opacity: .95;
 }
 .shortcut h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-weight: 400;
   margin: 0;
   text-align: center;
-  font-size: .8em;
+  font-size: .84em;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
   opacity: 0.5;
@@ -88,14 +88,43 @@
   opacity: 0.7;
 }
 
-.shortcut.film a,
+.shortcut.videolectures a,
 .shortcut.software a,
 .shortcut.literature a {
   padding-top: 5px;
 }
-.shortcut.film i,
-.shortcut.software i,
-.shortcut.literature i {
-  position: relative;
-  top: -5px;
+
+.email .envelope {
+  font-size: 2.6em;
+}
+
+.schedule .calendar {
+  margin-top: 3px;
+}
+
+.studentweb .bank {
+  margin-top: 5px;
+}
+
+.roomreservation .fa-clock-o {
+  font-size: 2.7em;
+  margin-top: 7px;
+}
+
+.dinner .cutlery {
+  margin-top: 5px;
+}
+
+.map .google_maps {
+  margin-top: 5px;
+}
+
+.farm .fa-cloud {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.videolectures .film {
+  font-size: 2em;
+  margin-top: 5px;
 }
