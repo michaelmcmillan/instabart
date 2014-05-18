@@ -54,7 +54,7 @@
   font-weight: 400;
   margin: 0;
   text-align: center;
-  font-size: .84em;
+  font-size: .8em;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
   opacity: 0.5;
@@ -127,4 +127,8 @@
 .videolectures .film {
   font-size: 2em;
   margin-top: 5px;
+}
+
+.software .pictogram-svg {
+  margin-top: 7px;
 }

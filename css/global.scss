@@ -64,7 +64,7 @@ $hovergrey: #eee;
     font-weight: 400;
     margin: 0;
     text-align: center;
-    font-size: .84em;
+    font-size: .8em;
     color: rgba(black, 0.8);
     text-shadow: 1px 4px 6px $lightgrey, 0 0 0 black, 1px 4px 6px $lightgrey;
     opacity: 0.5;
@@ -108,7 +108,6 @@ $hovergrey: #eee;
   a {
     padding-top: 5px;
   }
-
 }
 
 // Tweaking of icon size and positions
@@ -120,3 +119,4 @@ $hovergrey: #eee;
 .map .google_maps   { margin-top: 5px; }
 .farm .fa-cloud     { font-size: 2.5em; margin-top: 10px; }
 .videolectures .film { font-size: 2em; margin-top: 5px;}
+.software .pictogram-svg { margin-top: 7px;}
