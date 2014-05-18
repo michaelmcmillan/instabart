@@ -1,8 +1,10 @@
-* {
+#shortcuts * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
-  padding: 0;
 }
 
 #shortcuts {
@@ -13,73 +15,66 @@
   display: table;
   clear: both;
 }
-
-.shortcut {
+#shortcuts .shortcut {
   float: left;
-  display: inline-block;
   position: relative;
   width: 33.33%;
   padding: 0 6px 6px 0;
 }
-.shortcut:after {
+#shortcuts .shortcut:after {
   content: '';
   display: block;
   margin-top: 100%;
 }
-.shortcut a {
+#shortcuts .shortcut .content {
   position: absolute;
+  display: block;
+  overflow: hidden;
   margin: 0 6px 6px 0;
+  padding: 10px 5px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  display: block;
-  text-decoration: none;
-  padding: 10px 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   background: whitesmoke;
-  overflow: hidden;
+  text-decoration: none;
 }
-.shortcut a:hover {
+#shortcuts .shortcut .content:hover {
   background: #eeeeee;
 }
-.shortcut a:hover .pictogram, .shortcut a:hover h2 {
+#shortcuts .shortcut .content:hover .pictogram, #shortcuts .shortcut .content:hover h2 {
   opacity: .8;
 }
-.shortcut a:hover .pictogram-svg {
+#shortcuts .shortcut .content:hover .pictogram-svg {
   opacity: .95;
 }
-.shortcut h2 {
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 400;
+#shortcuts .shortcut h2 {
   margin: 0;
-  text-align: center;
-  font-size: .8em;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
   opacity: 0.5;
-}
-.shortcut .pictogram {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: .8em;
   text-align: center;
+  text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
+}
+#shortcuts .shortcut .pictogram {
+  display: block;
+  opacity: 0.5;
   padding-left: 0;
   font-size: 2.4em;
-  opacity: 0.5;
   font-style: normal;
-  display: block;
+  text-align: center;
   text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
 }
-.shortcut .pictogram::before {
+#shortcuts .shortcut .pictogram::before {
   position: relative;
   margin: 0;
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.1em;
 }
-.shortcut .inset-shadow-svg {
-  fill: rgba(0, 0, 0, 0.55);
-  -webkit-filter: url(#inset-shadow);
-  filter: url(#inset-shadow);
-}
-.shortcut .pictogram-svg {
+#shortcuts .shortcut .pictogram-svg {
   display: block;
   width: 40px;
   height: 40px;
@@ -87,49 +82,41 @@
   margin-top: 10px;
   opacity: 0.7;
 }
-
-.shortcut.roomreservation a,
-.shortcut.videolectures a,
-.shortcut.software a,
-.shortcut.literature a {
+#shortcuts .shortcut .inset-shadow-svg {
+  fill: rgba(0, 0, 0, 0.55);
+  -webkit-filter: url(#inset-shadow);
+  filter: url(#inset-shadow);
+}
+#shortcuts .shortcut.roomreservation a, #shortcuts .shortcut.videolectures a, #shortcuts .shortcut.software a, #shortcuts .shortcut.literature a {
   padding-top: 5px;
 }
-
-.email .envelope {
+#shortcuts .email .envelope {
   font-size: 2.6em;
 }
-
-.schedule .calendar {
+#shortcuts .schedule .calendar {
   margin-top: 3px;
 }
-
-.studentweb .bank {
+#shortcuts .studentweb .bank {
   margin-top: 5px;
 }
-
-.roomreservation .fa-clock-o {
+#shortcuts .roomreservation .fa-clock-o {
   font-size: 2.4em;
   margin-top: 4px;
 }
-
-.dinner .cutlery {
+#shortcuts .dinner .cutlery {
   margin-top: 5px;
 }
-
-.map .google_maps {
+#shortcuts .map .google_maps {
   margin-top: 5px;
 }
-
-.farm .fa-cloud {
+#shortcuts .farm .fa-cloud {
   font-size: 2.5em;
   margin-top: 10px;
 }
-
-.videolectures .film {
+#shortcuts .videolectures .film {
   font-size: 2em;
   margin-top: 5px;
 }
-
-.software .pictogram-svg {
+#shortcuts .software .pictogram-svg {
   margin-top: 7px;
 }
