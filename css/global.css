@@ -20,6 +20,7 @@ body {
   position: relative;
   width: 33.33%;
   padding: 0 6px 6px 0;
+  max-width: 120px;
 }
 #shortcuts .shortcut:after {
   content: '';
@@ -29,7 +30,6 @@ body {
 #shortcuts .shortcut .content {
   position: absolute;
   display: block;
-  overflow: hidden;
   margin: 0 6px 6px 0;
   padding: 10px 5px;
   top: 0;
@@ -82,11 +82,6 @@ body {
   margin-top: 10px;
   opacity: 0.7;
 }
-#shortcuts .shortcut .inset-shadow-svg {
-  fill: rgba(0, 0, 0, 0.55);
-  -webkit-filter: url(#inset-shadow);
-  filter: url(#inset-shadow);
-}
 #shortcuts .shortcut.roomreservation a, #shortcuts .shortcut.videolectures a, #shortcuts .shortcut.software a, #shortcuts .shortcut.literature a {
   padding-top: 5px;
 }
@@ -94,7 +89,8 @@ body {
   font-size: 2.6em;
 }
 #shortcuts .schedule .calendar {
-  margin-top: 3px;
+  margin-top: 5px;
+  font-size: 2em;
 }
 #shortcuts .studentweb .bank {
   margin-top: 5px;
@@ -119,4 +115,78 @@ body {
 }
 #shortcuts .software .pictogram-svg {
   margin-top: 7px;
+}
+#shortcuts .footer {
+  color: #666;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.7em;
+}
+#shortcuts .footer a {
+  color: #666;
+}
+#shortcuts .meta {
+  background-color: #e18728;
+  width: 100%;
+  font-size: 10px;
+  font-family: sans-serif;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 10;
+}
+#shortcuts .shortcut .content.no-padding {
+  padding: 0;
+}
+#shortcuts small {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+  font-size: .6em;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  margin-top: 2px;
+}
+#shortcuts .ribbon-wrapper-green {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#shortcuts .ribbon-green {
+  font: bold 9px sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: relative;
+  padding: 1px 0 1px 0px;
+  left: 5px;
+  bottom: -63px;
+  width: 120px;
+  background-color: #66a5df;
+  background-image: -webkit-linear-gradient(top, #66a5df, #66a5df);
+  background-image: linear-gradient(top, #66a5df, #66a5df);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+#shortcuts .ribbon-green:before, #shortcuts .ribbon-green:after {
+  content: "";
+  border-top: 3px solid #6e8900;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  bottom: -3px;
+}
+#shortcuts .ribbon-green:before {
+  left: 0;
+}
+#shortcuts .ribbon-green:after {
+  right: 0;
 }
