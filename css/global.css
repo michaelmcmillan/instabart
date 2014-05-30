@@ -49,6 +49,18 @@ body {
 #shortcuts .shortcut .content:hover .pictogram-svg {
   opacity: .95;
 }
+#shortcuts .shortcut .content:hover .ribbon {
+  background-color: #d9d9d9;
+  color: #222;
+}
+#shortcuts .shortcut .content:hover .ribbon-grey {
+  background-color: #777;
+  color: white;
+}
+#shortcuts .shortcut .content:hover .ribbon-orange {
+  background-color: #cd781c;
+  color: white;
+}
 #shortcuts .shortcut h2 {
   margin: 0;
   opacity: 0.5;
@@ -116,12 +128,12 @@ body {
 #shortcuts .software .pictogram-svg {
   margin-top: 7px;
 }
-#shortcuts .meta {
-  background-color: #e18728;
+#shortcuts .ribbon {
+  background-color: #e5e5e5;
   width: 100%;
   font-size: 10px;
   font-family: sans-serif;
-  color: white;
+  color: #444;
   padding: 1px;
   text-align: center;
   margin-bottom: 5px;
@@ -129,56 +141,24 @@ body {
   bottom: -5px;
   left: 0;
   z-index: 10;
+  letter-spacing: 0.03em;
 }
-#shortcuts .shortcut .content.no-padding {
-  padding: 0;
-}
-#shortcuts .ribbon-wrapper-green {
-  width: 85px;
-  height: 88px;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-#shortcuts .ribbon-green {
-  font: bold 9px sans-serif;
+#shortcuts .ribbon-grey {
+  background-color: #888;
   color: white;
-  text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  position: relative;
-  padding: 1px 0 1px 0px;
-  left: 5px;
-  bottom: -63px;
-  width: 120px;
-  background-color: #66a5df;
-  background-image: -webkit-linear-gradient(top, #66a5df, #66a5df);
-  background-image: linear-gradient(top, #66a5df, #66a5df);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
-#shortcuts .ribbon-green:before, #shortcuts .ribbon-green:after {
-  content: "";
-  border-top: 3px solid #6e8900;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  position: absolute;
-  bottom: -3px;
-}
-#shortcuts .ribbon-green:before {
-  left: 0;
-}
-#shortcuts .ribbon-green:after {
-  right: 0;
+#shortcuts .ribbon-orange {
+  background-color: #e18728;
+  color: white;
 }
 
-.footer {
+.shortcuts-footer {
   color: #666;
   font-family: sans-serif;
   text-align: center;
   font-size: 0.7em;
+  margin: 3px 6px;
 }
-.footer a {
+.shortcuts-footer a {
   color: #666;
 }
