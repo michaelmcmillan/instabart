@@ -116,15 +116,6 @@ body {
 #shortcuts .software .pictogram-svg {
   margin-top: 7px;
 }
-#shortcuts .footer {
-  color: #666;
-  font-family: sans-serif;
-  text-align: center;
-  font-size: 0.7em;
-}
-#shortcuts .footer a {
-  color: #666;
-}
 #shortcuts .meta {
   background-color: #e18728;
   width: 100%;
@@ -141,15 +132,6 @@ body {
 }
 #shortcuts .shortcut .content.no-padding {
   padding: 0;
-}
-#shortcuts small {
-  color: rgba(0, 0, 0, 0.3);
-  font-family: sans-serif;
-  font-size: .6em;
-  text-align: center;
-  display: block;
-  font-weight: bold;
-  margin-top: 2px;
 }
 #shortcuts .ribbon-wrapper-green {
   width: 85px;
@@ -189,4 +171,14 @@ body {
 }
 #shortcuts .ribbon-green:after {
   right: 0;
+}
+
+.footer {
+  color: #666;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.7em;
+}
+.footer a {
+  color: #666;
 }

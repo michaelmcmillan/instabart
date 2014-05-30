@@ -132,18 +132,6 @@ body {
   .videolectures .film { font-size: 2em; margin-top: 5px;}
   .software .pictogram-svg { margin-top: 7px;}
 
-  .footer {
-    color: #666;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 0.7em;
-
-    a {
-      color: #666;
-    }
-
-  }
-
   //
   .meta {
     background-color: #e18728;
@@ -164,18 +152,6 @@ body {
   .shortcut .content.no-padding {
     padding: 0;
   }
-
-  //
-  small {
-    color: rgba(0,0,0, 0.3);
-    font-family: sans-serif;
-    font-size: .6em;
-    text-align: center;
-    display: block;
-    font-weight: bold;
-    margin-top: 2px;
-  }
-
 
   // Corner ribbon
   .ribbon-wrapper-green {
@@ -219,3 +195,15 @@ body {
     right: 0;
   }
 }
+
+  .footer {
+    color: #666;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 0.7em;
+
+    a {
+      color: #666;
+    }
+
+  }
