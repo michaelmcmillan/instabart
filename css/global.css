@@ -76,16 +76,15 @@ body {
   opacity: 0.5;
   padding-left: 0;
   padding-top: 0;
-  font-size: 38px;
   font-style: normal;
   text-align: center;
   text-shadow: 1px 4px 6px whitesmoke, 0 0 0 black, 1px 4px 6px whitesmoke;
 }
-#shortcuts .shortcut .pictogram::before {
+#shortcuts .shortcut .pictogram:before {
   position: relative;
   margin: 0;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 1.1em;
+  font-size: 38px;
   vertical-align: top;
 }
 #shortcuts .shortcut .pictogram-svg {
