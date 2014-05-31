@@ -89,8 +89,8 @@ body {
 }
 #shortcuts .shortcut .pictogram-svg {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   margin: 0 auto;
   margin-top: 10px;
   opacity: 0.7;
@@ -98,39 +98,45 @@ body {
 #shortcuts .shortcut.roomreservation a, #shortcuts .shortcut.videolectures a, #shortcuts .shortcut.software a, #shortcuts .shortcut.literature a {
   padding-top: 5px;
 }
-#shortcuts .email .envelope {
-  font-size: 2.6em;
-  margin-top: 5px;
+#shortcuts .email .envelope:before {
+  font-size: 42px;
+  margin-top: 7px;
 }
-#shortcuts .schedule .calendar {
-  margin-top: 8px;
-  font-size: 2em;
+#shortcuts .schedule .calendar:before {
+  font-size: 36px;
+  margin-top: 6px;
 }
-#shortcuts .studentweb .bank {
-  margin-top: 8px;
+#shortcuts .studentweb .bank:before {
+  font-size: 38px;
+  margin-top: 12px;
+}
+#shortcuts .roomreservation .fa-clock-o:before {
+  font-size: 40px;
 }
 #shortcuts .roomreservation .fa-clock-o {
-  font-size: 2.4em;
   margin-top: 4px;
 }
-#shortcuts .dinner .cutlery {
-  margin-top: 8px;
+#shortcuts .dinner .cutlery:before {
+  margin-top: 11px;
 }
 #shortcuts .map .google_maps {
   margin-top: 8px;
 }
+#shortcuts .farm .fa-cloud:before {
+  font-size: 44px;
+}
 #shortcuts .farm .fa-cloud {
-  font-size: 2.5em;
   margin-top: 10px;
 }
-#shortcuts .videolectures .film {
-  font-size: 2em;
+#shortcuts .videolectures .film:before {
+  font-size: 34px;
   margin-top: 8px;
 }
 #shortcuts .software .pictogram-svg {
-  margin-top: 7px;
+  margin-top: 5px;
 }
 #shortcuts .literature .book_open {
+  font-size: 42px;
   margin-top: 4px;
 }
 #shortcuts .ribbon {
