@@ -139,6 +139,25 @@ body {
   font-size: 42px;
   margin-top: 4px;
 }
+#shortcuts .svg-fallback {
+  display: none;
+}
+.no-svg #shortcuts .svg-fallback {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-size: 38px;
+  margin: 10px auto;
+}
+#shortcuts .svg-fallback.itslearning {
+  background-image: url(../images/shortcut-itslearning.png);
+}
+#shortcuts .svg-fallback.bartebuss {
+  background-image: url(../images/shortcut-bartebuss.png);
+}
+#shortcuts .svg-fallback.software {
+  background-image: url(../images/shortcut-software.png);
+}
 #shortcuts .ribbon {
   width: 100%;
   position: absolute;

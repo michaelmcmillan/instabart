@@ -148,6 +148,31 @@ body {
   .software .pictogram-svg { margin-top: 5px;}
   .literature .book_open { font-size: 42px; margin-top: 4px;}
 
+  // SVG fallback for Android 2.3
+  .svg-fallback {
+    display: none;
+
+    .no-svg & {
+      display: block;
+      width: 38px;
+      height: 38px;
+      background-size: 38px;
+      margin: 10px auto;
+    }
+
+    &.itslearning {
+      background-image: url(../images/shortcut-itslearning.png);
+    }
+
+    &.bartebuss {
+      background-image: url(../images/shortcut-bartebuss.png);
+    }
+
+    &.software {
+      background-image: url(../images/shortcut-software.png);
+    }
+  }
+
   // Ribbon displayed at bottom of the link box
   .ribbon {
     width: 100%;
