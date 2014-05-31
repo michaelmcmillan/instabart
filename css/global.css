@@ -43,15 +43,18 @@ body {
 #shortcuts .shortcut .content:hover {
   background: #eeeeee;
 }
-#shortcuts .shortcut .content:hover .pictogram, #shortcuts .shortcut .content:hover h2 {
+#shortcuts .shortcut .content:hover .pictogram {
   opacity: .8;
+}
+#shortcuts .shortcut .content:hover h2 {
+  opacity: 1;
 }
 #shortcuts .shortcut .content:hover .pictogram-svg {
   opacity: .95;
 }
 #shortcuts .shortcut .content:hover .ribbon {
   background-color: #d9d9d9;
-  color: #222;
+  color: #111;
 }
 #shortcuts .shortcut .content:hover .ribbon-grey {
   background-color: #777;
@@ -63,7 +66,7 @@ body {
 }
 #shortcuts .shortcut h2 {
   margin: 0;
-  opacity: 0.5;
+  opacity: 0.7;
   color: rgba(0, 0, 0, 0.8);
   font-family: sans-serif;
   font-weight: 400;
