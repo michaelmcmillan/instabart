@@ -4,7 +4,7 @@ Instabart på Innsida
 ## Filer
 - index.html
 - iframe.html
-    + Brukt gjennom utviklingsfasen. Iframen har samme størrelse som en portlet på Innsida
+    + OBS! Ikke nødvendig. Brukt i utviklingsfasen for å etterligne portlets på Innsida
 - css/global.css
 - css/global.scss
     + Ikke nødvendig, men kjekt hvis dere uansett bruker Sass.
@@ -17,8 +17,8 @@ Instabart på Innsida
 - shorcut-[bartebuss|itslearning|software].png
     + Dette brukes som SVG fallback for å støtte Android 2.3
 - js/modernizr.js
-- js/analytics.js
-    + OBS! IKKE EN DEL AV PROSJEKTET! Kun lagt ved som et eksempel på hvordan event tracking er gjennomført på Instabart.no
+- js/analytics.example.js
+    + OBS! Ikke en del av prosjektet. Kun lagt ved som et eksempel på hvordan event tracking er gjennomført på Instabart.no
 
 
 ## Avhengigheter
