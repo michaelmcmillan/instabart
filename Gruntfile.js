@@ -60,7 +60,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Where we tell Grunt what to do when we type "grunt" into the terminal.
   grunt.registerTask('default', ['sass', 'autoprefixer']);
